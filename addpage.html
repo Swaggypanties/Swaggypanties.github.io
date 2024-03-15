@@ -1,0 +1,57 @@
+<!doctype html>
+<HTML lang="en">
+	<head>
+		<title>Add new entry</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="stFolder/stylefp.css">
+	</head>
+        <body>
+            
+        <div class="container">
+            <div class="center" id="wlcm">
+                <h1 id="wlcm">How was your day today?</h1>
+                <h2>Please submit<br> how much you have <br> trained and eaten today<br></h2>
+            </div>
+            <form onsubmit="lisaa(event)" id="addpage" method="get" action="summarypage.html">
+                    <div class="center1">
+                        <h2>How many hours have you trained today?</h2>
+                        <input type="number" id="train" name="train" placeholder="How many hours?" required > 
+                        <br>
+                        <span id="trainsError" class="error-message"></span>
+                        <br> <br>
+                        <h2>How many calories(kcal) have you consumed today?</h2>
+                        <input type="number" id="kcal" name="kcal" placeholder="kcal" >
+                        <br>
+                        <span id="kcalError" class="error-message"></span>
+                        <br> <br>
+                        <h2>What type of training did you do today?</h2>
+                    
+                        <select name="intensity" id="intensity" required>
+                            <option value="" selected="selected">Select the intensity</option>
+                          </select>
+                          <br><br>
+                        <select name="sport" id="sport" required>
+                            <option value="" selected="selected">Select the activity</option>
+                          </select>
+                          <h4>*calories burned is estimated if your weight is 80kg*</h4>
+                        <br>
+                        <span id="heightError" class="error-message"></span>
+                        <br>
+                        
+                        
+                        <input type="submit" value="Submit" id="submit">
+                        <br>
+                        <br>
+                        <a href="secondpage.html" class="button">Return to the front page</a>
+                    </div>
+                </div>
+            </form>
+            
+            
+            
+            
+            
+            
+        </body>
+        <script src="scripts/scripts.js"></script>
+</HTML>

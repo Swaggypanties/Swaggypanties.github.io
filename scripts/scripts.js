@@ -367,7 +367,7 @@ document.addEventListener('DOMContentLoaded', function() { //Tulostaa MBR tuloks
 
         let mbrValue = mbrFormula();
         if(mbrValue !==null){
-        mbrElement.innerHTML = 'MBR: ' + mbrValue + 'kcal'  ;
+        mbrElement.innerHTML = '*MBR: ' + mbrValue + 'kcal'  ;
     }
     }
 });
